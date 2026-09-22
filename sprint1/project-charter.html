@@ -1,27 +1,235 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Market Research</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project Charter | CampusCents</title>
+
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
     <header>
+        <h1>CampusCents</h1>
 
-        <h1>[Project Title]</h1>
-
-        <nav>
-        <a href="../index.html">Home</a>
-        <a href="../about.html">About Us</a>
-        <a href="../sprint1.html">Sprint 1</a>
+        <nav aria-label="Main navigation">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About Us</a>
+            <a href="../sprint1.html">Sprint 1</a>
         </nav>
     </header>
 
     <main>
-        <h1>Project Charter</h1>
+        <section>
+            <h1>Project Charter</h1>
 
+            <p>
+                CampusCents is a personal finance management system designed
+                to help college students manage their income, expenses,
+                budgets, bills, and savings goals.
+            </p>
+
+            <p>
+                <a href="../documents/CampusCents_Project_Charter.pdf" download>
+                    Download the Project Charter PDF
+                </a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Project Purpose</h2>
+
+            <p>
+                Many college students have difficulty understanding where
+                their money goes and how much they can safely spend each
+                month. CampusCents will provide a simple system where students
+                can record transactions, create budgets, monitor spending,
+                receive bill reminders, and track savings progress.
+            </p>
+        </section>
+
+        <section>
+            <h2>Project Objectives</h2>
+
+            <ul>
+                <li>Allow users to record income and expenses.</li>
+                <li>Help users create and manage monthly budgets.</li>
+                <li>Display spending by category.</li>
+                <li>Allow users to create and monitor savings goals.</li>
+                <li>Provide reminders for upcoming bills.</li>
+                <li>Present simple financial summaries and reports.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Project Scope</h2>
+
+            <h3>In Scope</h3>
+
+            <ul>
+                <li>User profile creation</li>
+                <li>Manual income and expense entry</li>
+                <li>Customizable spending categories</li>
+                <li>Monthly budget creation</li>
+                <li>Budget and spending dashboard</li>
+                <li>Savings-goal tracking</li>
+                <li>Bill reminders</li>
+                <li>Basic financial reports</li>
+                <li>Responsive web design</li>
+            </ul>
+
+            <h3>Out of Scope</h3>
+
+            <ul>
+                <li>Direct connections to bank accounts</li>
+                <li>Payment processing</li>
+                <li>Investment recommendations</li>
+                <li>Tax preparation or tax advice</li>
+                <li>Credit-score calculations</li>
+                <li>Cryptocurrency trading</li>
+                <li>Loans or lending services</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Major Deliverables</h2>
+
+            <ul>
+                <li>Living Project Portal</li>
+                <li>Project requirements and prioritized backlog</li>
+                <li>Finance management system prototype</li>
+                <li>Budgeting and expense-tracking features</li>
+                <li>Testing results and supporting evidence</li>
+                <li>User documentation</li>
+                <li>Sprint records and final project demonstration</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Assumptions</h2>
+
+            <ul>
+                <li>Users will have reliable internet access.</li>
+                <li>Users will enter their financial information manually.</li>
+                <li>The team will use free development and hosting tools.</li>
+                <li>The prototype will not use real banking information.</li>
+                <li>Team members will review shared work before submission.</li>
+                <li>Course deadlines will determine the project schedule.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Constraints</h2>
+
+            <ul>
+                <li>The project must be completed within one semester.</li>
+                <li>The team has no budget for paid services.</li>
+                <li>Team members have limited and different schedules.</li>
+                <li>Financial information requires careful privacy protection.</li>
+                <li>The system cannot provide professional financial advice.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Stakeholder Register</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stakeholder</th>
+                        <th>Interest</th>
+                        <th>Influence</th>
+                        <th>Planned Engagement</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>College students</td>
+                        <td>Simple budgeting and useful financial feedback</td>
+                        <td>High</td>
+                        <td>Interviews and usability testing</td>
+                    </tr>
+
+                    <tr>
+                        <td>Instructor or project sponsor</td>
+                        <td>Complete and defensible project work</td>
+                        <td>High</td>
+                        <td>Sprint reviews and portal updates</td>
+                    </tr>
+
+                    <tr>
+                        <td>Project team</td>
+                        <td>Clear responsibilities, scope, and schedule</td>
+                        <td>High</td>
+                        <td>Weekly meetings and task reviews</td>
+                    </tr>
+
+                    <tr>
+                        <td>University community</td>
+                        <td>Support for student financial wellness</td>
+                        <td>Medium</td>
+                        <td>Feedback on usefulness and accessibility</td>
+                    </tr>
+
+                    <tr>
+                        <td>Future developers</td>
+                        <td>Understandable code and documentation</td>
+                        <td>Medium</td>
+                        <td>Repository documentation and change history</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Key Project Risks</h2>
+
+            <ul>
+                <li>
+                    <strong>Scope growth:</strong>
+                    Additional features could delay the project.
+                </li>
+
+                <li>
+                    <strong>Calculation errors:</strong>
+                    Incorrect financial calculations could reduce user trust.
+                </li>
+
+                <li>
+                    <strong>Privacy concerns:</strong>
+                    Financial information must be handled carefully.
+                </li>
+
+                <li>
+                    <strong>Unclear responsibilities:</strong>
+                    Poor task ownership could cause missed deadlines.
+                </li>
+
+                <li>
+                    <strong>Limited user feedback:</strong>
+                    The design may not meet student needs without early testing.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Success Criteria</h2>
+
+            <ul>
+                <li>The core budgeting and expense features work correctly.</li>
+                <li>Financial calculations are accurate during testing.</li>
+                <li>Users can understand and complete the main tasks.</li>
+                <li>The required portal documents are complete.</li>
+                <li>The project remains within the approved scope.</li>
+                <li>Every team member can explain the project decisions.</li>
+            </ul>
+        </section>
     </main>
 
+    <footer>
+        <p>CampusCents | CS 4390/5388 | Sprint 1</p>
+    </footer>
 </body>
-
 </html>
