@@ -7,7 +7,6 @@
 
 <body>
     <header>
-
         <h1>CampusCents</h1>
 
         <nav>
@@ -15,9 +14,152 @@
             <a href="../about.html">About Us</a>
             <a href="../sprint1.html">Sprint 1</a>
             <a href="../sprint2.html">Sprint 2</a>
-          <a href="../sprint3.html">Sprint 2</a>
+            <a href="../sprint3.html">Sprint 3</a>
         </nav>
-
     </header>
 
     <main>
+        <section>
+            <h2>Interviews & Competitor Analysis</h2>
+
+            <h3>Competitor Overview</h3>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Competitor</th>
+                        <th>Competitor Type</th>
+                        <th>Primary Focus / Value Proposition</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Cleo</strong></td>
+                        <td>Direct Competitor</td>
+                        <td>AI-native conversational chatbot that uses conversational nudges, roasts, and automated rules to encourage saving.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Monarch Money</strong></td>
+                        <td>Direct / Adjacent Competitor</td>
+                        <td>Full-suite household budgeting and financial tracking tool with integrated AI assistance.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>YNAB (You Need A Budget)</strong></td>
+                        <td>Indirect Competitor</td>
+                        <td>Strict manual zero-based budgeting system focusing on behavior change rather than automated AI.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Interview Script and Guidelines</h2>
+            
+            <p><strong>Timeline Overview:</strong></p>
+            <ul>
+                <li><strong>[00:00 - 02:00]</strong> Warm-Up &amp; Context</li>
+                <li><strong>[02:00 - 07:00]</strong> Product Usage &amp; Core Mechanics</li>
+                <li><strong>[07:00 - 12:00]</strong> AI/Automation Experience &amp; Pain Points</li>
+                <li><strong>[12:00 - 15:00]</strong> Decision &amp; Value Assessment</li>
+            </ul>
+
+            <article>
+                <h3>Interview 1: Cleo User (Direct Competitor)</h3>
+                <p><strong>Goal:</strong> Understand how users interact with a conversational AI agent for spending and saving.</p>
+                <p><strong>Questions:</strong></p>
+                <ol>
+                    <li><strong>Background &amp; Setup:</strong> How long have you been using Cleo, and what made you choose a chat-based app over traditional spreadsheets or bank apps?</li>
+                    <li><strong>AI Engagement:</strong> How often do you interact with the chat interface (e.g., asking "Can I afford this?" or receiving auto-roasts)? Does the personality keep you engaged or ever feel gimmicky?</li>
+                    <li><strong>Saving Nudges:</strong> Have Cleo’s auto-save rules or chat notifications actively stopped you from overspending? Can you give a specific example?</li>
+                    <li><strong>Frustrations &amp; Gaps:</strong> Where does the AI fail? (e.g., miscategorizing transactions, unhelpful responses, paywall friction)?</li>
+                </ol>
+            </article>
+
+            <article>
+                <h3>Interview 2: Monarch Money User (Direct / Adjacent Competitor)</h3>
+                <p><strong>Goal:</strong> Understand how users evaluate comprehensive tracking apps with AI query features.</p>
+                <p><strong>Questions:</strong></p>
+                <ol>
+                    <li><strong>Background &amp; Setup:</strong> What primary goal led you to pay for Monarch Money (e.g., shared partner finances, net worth tracking, monthly budget)?</li>
+                    <li><strong>AI Assistance Utility:</strong> Monarch has an AI financial assistant. Do you actively ask it questions about your finances, or do you rely mainly on the visual dashboards?</li>
+                    <li><strong>Actionability:</strong> Does the app actively help you save money every month, or does it primarily function as a reporting mirror after spending occurs?</li>
+                    <li><strong>Frustrations &amp; Gaps:</strong> What feature is missing that would make budgeting feel less manual or tedious?</li>
+                </ol>
+            </article>
+
+            <article>
+                <h3>Interview 3: YNAB User (Indirect Competitor)</h3>
+                <p><strong>Goal:</strong> Understand why users prefer disciplined manual budgeting over automated AI tools.</p>
+                <p><strong>Questions:</strong></p>
+                <ol>
+                    <li><strong>Background &amp; Setup:</strong> Why did you choose YNAB’s strict zero-based budgeting method over automated AI apps?</li>
+                    <li><strong>Behavioral Impact:</strong> YNAB requires manual/intentional category assignment. How does that friction affect your daily purchasing decisions?</li>
+                    <li><strong>Automation Views:</strong> Would you trust an AI agent to automatically allocate your income or budget categories for you? Why or why not?</li>
+                    <li><strong>Frustrations &amp; Gaps:</strong> What is the hardest part about sticking with YNAB, and where do you usually fall off or get frustrated?</li>
+                </ol>
+            </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Detailed Evidence Log</h2>
+
+            <!-- Artifact LOG-01 -->
+            <article>
+                <h3>Artifact ID: LOG-01</h3>
+                <ul>
+                    <li><strong>Competitor Evaluated:</strong> Cleo (Direct Competitor)</li>
+                    <li><strong>Participant:</strong> CS Undergraduate Student (Uses Cleo for micro-savings)</li>
+                    <li><strong>Interview Duration:</strong> 15 Minutes</li>
+                    <li><strong>Teardown Completed:</strong> Yes (30-min onboarding &amp; chat flow evaluation)</li>
+                </ul>
+
+                <h4>1. Verbatim Evidence &amp; Observations</h4>
+                <blockquote>
+                    "I loved the 'roast' feature at first because it was funny, but after a month, asking the chat bot 'can I afford this' felt like too many steps when standing in line at a coffee shop. I just want the app to tell me my safe-to-spend limit automatically." — <em>Participant 1</em>
+                </blockquote>
+
+                <h4>2. Teardown Findings</h4>
+                <ul>
+                    <li>Onboarding takes &lt;3 minutes with bank link.</li>
+                    <li>High engagement initially, but chat interface adds interaction friction for quick checks.</li>
+                    <li>Auto-save rules (round-ups) work silently in the background and are the most retained feature.</li>
+                </ul>
+
+                <h4>3. Product Takeaways &amp; Actionable Decisions</h4>
+                <ul>
+                    <li><strong>Insight:</strong> Chat-only interfaces introduce friction for instant decision-making.</li>
+                    <li><strong>Decision for Our App:</strong> Implement a "Safe-to-Spend" widget/dashboard card for instant visual feedback, while reserving the AI Chat agent for deeper weekly summaries and personalized goal setup.</li>
+                </ul>
+            </article>
+
+            <br>
+
+            <!-- Artifact LOG-02 -->
+            <article>
+                <h3>Artifact ID: LOG-02</h3>
+                <ul>
+                    <li><strong>Competitor Evaluated:</strong> Monarch Money (Direct / Adjacent Competitor)</li>
+                    <li><strong>Participant:</strong> Working Professional / Graduate Student</li>
+                    <li><strong>Interview Duration:</strong> 15 Minutes</li>
+                    <li><strong>Teardown Completed:</strong> Yes (30-min budget allocation &amp; analytics breakdown)</li>
+                </ul>
+
+                <h4>1. Verbatim Evidence &amp; Observations</h4>
+                <blockquote>
+                    "Monarch gives me amazing charts, but it's completely backward-looking. By the time I see I overspent on dining out, the month is already over. The app doesn't proactively intervene or help me adjust my budget mid-month." — <em>Participant 2</em>
+                </blockquote>
+
+                <h4>2. Teardown Findings</h4>
+                <ul>
+                    <li>Comprehensive financial aggregator, but requires heavy manual setup for monthly budget caps.</li>
+                    <li>AI assistant feature is hidden deep in settings, leading to low feature discovery.</li>
+                    <li>Lacks dynamic mid-month recalculations when a user overspends in a specific category.</li>
+                </ul>
+
+                <h4>3. Product Takeaways &amp; Actionable Decisions</h4>
+                <ul>
+                    <li><strong>Insight:</strong> Static dashboards show history, but users need real-time behavioral intervention.</li>
+                    <li><strong>Decision for Our App:</strong> Build an AI Mid-Month Auto-Balancer that detects overspending early and suggests dynamic reallocations (e.g., "You went \$30 over on dining out; move \$3
