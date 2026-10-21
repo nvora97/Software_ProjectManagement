@@ -1,8 +1,9 @@
+
 body {
-    background-color: #0A192F;
+    background-color: #0B1425;
     color: white;
     font-family: Arial, sans-serif;
-
+    line-height: 1.6;
     margin: 0;
 }
 
@@ -10,21 +11,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 15px 30px;
-    border-bottom: 2px solid white;
+    padding: 20px 30px;
+    background-color: #101D31;
+    border-bottom: 1px solid #34445B;
 }
 
 footer {
-    padding: 10px;
+    padding: 20px;
     margin-top: 30px;
-
-    border-top: 2px solid white;
+    background-color: #101D31;
+    border-top: 1px solid #34445B;
     text-align: center;
 }
 
 main {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 30px 20px;
 }
@@ -38,56 +39,75 @@ nav {
 nav a {
     background-color: #FF8200;
     color: white;
-
     padding: 10px 18px;
-
     text-decoration: none;
     font-weight: bold;
-
-    border: 1px solid #FF8200;
-    border-radius: 10px;
-
+    border-radius: 8px;
 }
 
 nav a:hover {
     background-color: #E07000;
-    color: white;
-    border-color: #E07000;
-
-  
 }
 
 /* Content boxes */
 .box {
-    background-color: #112240;
-    border-left: 4px solid #FF8200;
-    border-radius: 10px;
-
-    padding: 20px 25px;
+    background-color: #14243A;
+    border: 1px solid #34445B;
+    border-radius: 12px;
+    padding: 25px;
     margin: 20px 0;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.box h2 {
+.box:hover {
+    background-color: #1A2D47;
+}
+
+/* Subheadings */
+h2, h3 {
     color: #FF8200;
-}
-
-.box p {
-    color: white;
 }
 
 /* Links */
 .link {
     display: inline-block;
-    color: #FF8200;
+    background-color: #FF8200;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-
-    transition: all 0.2s ease-in-out;
 }
 
 .link:hover {
+    background-color: #E07000;
     color: white;
-    transform: translateX(5px);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #34445B;
+    text-align: left;
+}
+
+th {
+    background-color: #213550;
+}
+
+tr:nth-child(even) {
+    background-color: #192A42;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
