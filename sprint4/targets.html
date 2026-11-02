@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Targets</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
 
+<body>
+    <header>
+        <h1>CampusCents</h1>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About Us</a>
+            <a href="../sprint1.html">Sprint 1</a>
+            <a href="../sprint2.html">Sprint 2</a>
+            <a href="../sprint3.html">Sprint 3</a>
+           <a href="../sprint4.html">Sprint 4</a>
+          
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Targets</h2>
+
+            <h3>Target 1: AI Analysis Latency & Inference Degradation</h3>
+            <ul>
+                <li><strong>Indicator (SLI Type):</strong> Latency</li>
+                <li><strong>Technical Definition:</strong> The end-to-end P95 latency measured from the client payload transmission of an unstructured expense string or financial query to the API gateway, through downstream Large Language Model (LLM) token inference/categorization, down to successful DOM rendering of structured budget insights on the client dashboard.</li>
+                <li><strong>Measurement Methodology:</strong>
+                    <ul>
+                        <li><strong>Tool:</strong> Datadog / APM distributed tracing coupled with automated browser testing scripts checking real-time response round-trips.</li>
+                        <li><strong>Schedule:</strong> Continuously monitored in staging/production, aggregated and reviewed every Monday and Friday.</li>
+                        <li><strong>Owner:</strong> Frontend / AI Integration Lead.</li>
+                    </ul>
+                </li>
+                <li><strong>SLO (Target & Time Window):</strong> 95% of asynchronous AI-driven categorization and insight generation requests must complete and render within a 3.0-second window over a rolling 30-day sprint cycle.</li>
+                <li><strong>Master-Level Rule & Error Budget Justification:</strong>
+                    <ul>
+                        <li><strong>Embracing Risk:</strong> This yields a 5% error budget for slow responses per sprint.</li>
+                        <li><strong>Rule Check:</strong> Adheres to "perfection can wait" (95% threshold prevents brittle, over-engineered optimizations); avoids unmeasurable absolute phrasing.</li>
+                    </ul>
+                </li>
+                <li><strong>Who Would Notice:</strong> End-users dependent on responsive financial tracking, where high latency degrades user retention and increases transactional friction.</li>
+            </ul>
+
+            <h3>Target 2: Financial Arithmetic Correctness & Deterministic Transaction Sync</h3>
+            <ul>
+                <li><strong>Indicator (SLI Type):</strong> Correctness</li>
+                <li><strong>Technical Definition:</strong> The ratio of mathematically deterministic financial calculations (budget totals, delta allocations, tax forecasts) and ledger API sync actions that execute without unhandled floating-point exceptions, race conditions, or LLM-induced hallucinated data mutations against user accounts.</li>
+                <li><strong>Measurement Methodology:</strong>
+                    <ul>
+                        <li><strong>Tool:</strong> Automated integration test suites executing transactional mock payloads via GitHub Actions CI/CD pipelines, alongside post-deployment invariant assertions.</li>
+                        <li><strong>Schedule:</strong> Executed automatically on every pull request merge and enforced strictly prior to every sprint deployment deadline.</li>
+                        <li><strong>Owner:</strong> Backend / QA Lead.</li>
+                    </ul>
+                </li>
+                <li><strong>SLO (Target & Time Window):</strong> 100% calculation accuracy with zero unhandled arithmetic errors or broken ledger synchronization states at every sprint deployment deadline.</li>
+                <li><strong>Master-Level Rule & Error Budget Justification:</strong>
+                    <ul>
+                        <li><strong>Zero-Tolerance Policy:</strong> Adopts a strict zero-tolerance target (0% allowed budget), meaning any single financial discrepancy or silent failure instantly exhausts the error budget, triggering an automatic rollback and mandatory regression review.</li>
+                        <li><strong>Rule Check:</strong> Chosen deliberately for financial domains where data integrity is non-negotiable.</li>
+                    </ul>
+                </li>
+                <li><strong>Who Would Notice:</strong> App users and the instructor acting as project sponsor, who require absolute ledger accuracy to prevent monetary miscalculations.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
