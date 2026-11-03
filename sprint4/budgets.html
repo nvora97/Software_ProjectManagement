@@ -1,1 +1,139 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgets - CampusCents</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>CampusCents</h1>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About Us</a>
+            <a href="../sprint1.html">Sprint 1</a>
+            <a href="../sprint2.html">Sprint 2</a>
+            <a href="../sprint3.html">Sprint 3</a>
+            <a href="../sprint4.html">Sprint 4</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Budgets</h2>
+
+            <p>
+                <a href="../documents/CampusCents_Budgets.pdf"
+                   class="link"
+                   target="_blank"
+                   download>
+                    Download Budgets PDF
+                </a>
+            </p>
+
+            <h3>Overview</h3>
+            <p>
+                CampusCents is a personal finance application
+                designed to help college students manage expenses,
+                track transactions, create budgets, and receive
+                AI-powered financial recommendations. Two
+                service-level objectives (SLOs) have been
+                established: AI analysis response time and
+                financial calculation correctness.
+            </p>
+
+            <h3>Error Budget Calculations</h3>
+
+            <h3>Target 1: AI Analysis Latency</h3>
+
+            <p>
+                <strong>Service-Level Objective (SLO):</strong>
+                At least 95% of AI-powered expense categorization
+                and financial insight requests must complete and
+                display results within 3 seconds over a rolling
+                30-day period.
+            </p>
+
+            <p>
+                <strong>Error Budget Calculation:</strong>
+                Error Budget = 100% − 95% = 5%
+            </p>
+
+            <p>
+                For example, if CampusCents processes 10,000 AI
+                requests during the measurement period:
+            </p>
+
+            <p>
+                <strong>
+                    10,000 × 0.05 = 500 allowable slow requests.
+                </strong>
+            </p>
+
+            <p>
+                Therefore, up to 500 requests may exceed the
+                3-second response-time target without violating
+                the SLO.
+            </p>
+
+            <p>
+                <strong>Error Budget Policy:</strong>
+                If more than 50% of the error budget is consumed,
+                the development team will investigate slow API
+                responses, AI processing delays, and frontend
+                rendering performance. If the entire budget is
+                exhausted, nonessential feature releases will be
+                temporarily paused until performance improvements
+                are implemented and verified.
+            </p>
+
+            <h3>Target 2: Financial Arithmetic Correctness</h3>
+
+            <p>
+                <strong>Service-Level Objective (SLO):</strong>
+                CampusCents must maintain 100% accuracy in
+                financial calculations and transaction
+                synchronization at every sprint deployment
+                deadline.
+            </p>
+
+            <p>
+                <strong>Error Budget Calculation:</strong>
+            </p>
+
+            <p>
+                <strong>
+                    Error Budget = 100% − 100% = 0%
+                </strong>
+            </p>
+
+            <p>
+                This establishes a zero-tolerance policy for
+                incorrect budget totals, transaction
+                discrepancies, and synchronization failures.
+            </p>
+
+            <p>
+                <strong>Error Budget Policy:</strong>
+                Any confirmed financial calculation error or
+                corrupted transaction record immediately exhausts
+                the error budget. The team must block or roll back
+                the affected deployment, investigate the issue,
+                correct the defect, and complete regression
+                testing before releasing the application again.
+            </p>
+        </section>
+
+        <p>
+            <a href="../sprint4.html" class="link">
+                ← Back to Sprint 4
+            </a>
+        </p>
+    </main>
+</body>
+</html>
